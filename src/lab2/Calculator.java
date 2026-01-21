@@ -55,7 +55,7 @@ public class Calculator {
             System.out.println("Зачем на ноль делишь? Ошибка!");
         }
 
-        return (int) ((double)first / (double)second);
+        return ((double)first / (double)second);
 
     }
 
@@ -71,7 +71,7 @@ public class Calculator {
         if (second == 0){
             System.out.println("Зачем на ноль делишь? Ошибка!");
         }
-        return (int) ((double)first / (double)second);
+        return ((double)first / (double)second);
 
     }
 }

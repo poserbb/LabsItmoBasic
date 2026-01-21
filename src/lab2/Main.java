@@ -27,6 +27,18 @@ public class Main {
         System.out.println("Конструктор без параметров вот это выводит: \n");
         System.out.println(hf);
 
+        System.out.println("После постановки через сеттеры/геттеры: \n");
+
+        hf.setBrand("apple");
+        hf.setMicrophone(true);
+        hf.setBluetooth(true);
+        hf.setWeight(0.3);
+
+        System.out.println("Бренд: " + hf.getBrand());
+        System.out.println("Вес: " + hf.getWeight());
+        System.out.println("Наличие микрофона: " + hf.getIsMicrophone());
+        System.out.println("Наличие bluetooth: " + hf.getIsHaveBluetooth());
+
         Headphones hf2 = new Headphones("JBL", true, 0.5, false);
         System.out.println("Конструктор с параметрами вот это выводит: \n");
         System.out.println(hf2);

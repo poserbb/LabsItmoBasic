@@ -22,7 +22,38 @@ public class Headphones {
         return "Бренд - " + brand + "\n" +
                 "Наличие bluetooth - " + haveBluetooth + "\n" +
                 "Вес(килограммы) - " + weight + "\n" +
-                "Наличие микровона - " + microphone + "\n";
+                "Наличие микрофона - " + microphone + "\n";
     }
 
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public boolean getIsHaveBluetooth() {
+        return haveBluetooth;
+    }
+
+    public void setBluetooth(boolean haveBluetooth) {
+        this.haveBluetooth = haveBluetooth;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+
+    public boolean getIsMicrophone() {
+        return microphone;
+    }
+
+    public void setMicrophone(boolean microphone) {
+        this.microphone = microphone;
+    }
 }
