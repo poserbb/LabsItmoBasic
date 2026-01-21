@@ -4,14 +4,34 @@ package lab2;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+//Задание 1
+        Calculator calc = new Calculator();
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        System.out.println(calc.summa(1, 2));
+        System.out.println(calc.summa(1.1, 2.2));
+        System.out.println(calc.summa(100000000000L, 2222222222L));
+        System.out.println(calc.minus(1, 2));
+        System.out.println(calc.minus(2.5, 1.5));
+        System.out.println(calc.minus(2222222222L, 111111111L));
+        System.out.println(calc.expand(5, 2));
+        System.out.println(calc.expand(5.5, 2.5));
+        System.out.println(calc.expand(11111111111L, 2222222222L));
+        System.out.println(calc.slash(4, 2));
+        System.out.println(calc.slash(5.5, 2.5));
+        System.out.println(calc.slash(11111111111L, 2222222222L));
+        System.out.println(calc.slash(3, 0) + "\n");
+
+
+//Задание 2
+        Headphones hf = new Headphones();
+        System.out.println("Конструктор без параметров вот это выводит: \n");
+        System.out.println(hf);
+
+        Headphones hf2 = new Headphones("JBL", true, 0.5, false);
+        System.out.println("Конструктор с параметрами вот это выводит: \n");
+        System.out.println(hf2);
+
+
+
     }
 }
