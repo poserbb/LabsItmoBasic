@@ -1,9 +1,6 @@
 package lab4;
 
-import lab4.part2.IsSortArr;
-import lab4.part2.PrintArr;
-import lab4.part2.SwapNums;
-import lab4.part2.UniqueNum;
+import lab4.part2.*;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -102,5 +99,15 @@ public class Main {
         int[] fUnic = unicNum.getArr(scanner.nextInt());
         UniqueNum fUN = new UniqueNum();
         fUN.findUnique(fUnic);
+
+
+        System.out.println("\n" + "Часть 2, задание 5");
+        System.out.println("\n");
+        System.out.println("Введите длину массива: ");
+        FirstLastTrhee mrgSrtArr = new FirstLastTrhee();
+        int[] mRSA = mrgSrtArr.getArr(scanner.nextInt());
+        MergeSort mSA = new MergeSort();
+        mSA.mergeSort(mRSA);
+        System.out.println("Отсортированный массив: " + Arrays.toString(mRSA));
     }
 }
