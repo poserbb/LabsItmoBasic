@@ -17,9 +17,16 @@ public class FixThreads100 {
             thread.start();
         }
 
-        for (Thread thread : threads) {
-            thread.join();
-        }
+        boolean allDone;
+        do {
+            allDone = true;
+            for (Thread thread : threads) {
+                if (thread.isAlive()) {
+                    allDone = false;
+                    break;
+                }
+            }
+        } while (!allDone);
 
         System.out.println(counter.getCount());
     }

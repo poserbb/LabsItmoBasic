@@ -5,6 +5,7 @@ package lab7;
 public class Main {
     public static void main(String[] args) {
         AirPlane aP = new AirPlane();
+        aP.setInfo(450.7F, 435.5F);
         aP.getInfo();
     }
 }

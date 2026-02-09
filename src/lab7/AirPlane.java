@@ -2,8 +2,17 @@ package lab7;
 
 public class AirPlane {
 
-    Wing wing = new Wing(560.6F);
-    Wing wing2 = new Wing(569.7F);
+    private Wing wing;
+    private Wing wing2;
+
+    public void setInfo(float weight1, float weight2){
+        this.wing = new Wing(weight1);
+        this.wing2 = new Wing(weight2);
+    }
+
+
+//    Wing wing = new Wing(560.6F);
+//    Wing wing2 = new Wing(569.7F);
 
     public void getInfo() {
         System.out.println(wing.showWeight());

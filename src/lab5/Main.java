@@ -30,7 +30,13 @@ public class Main {
 
         System.out.println("\n" + "Задание 3" + "\n");
         System.out.println("Введите текст, который нужно цензурировать");
-        System.out.println(censore(scan.nextLine()));
+        String censText = scan.nextLine();
+        System.out.println("Введите слово, которое нужно цензурировать");
+        String censoringWord = scan.nextLine();
+        System.out.println("Введите что будет выводиться вместо цензурированного слова");
+        String censoredWord = scan.nextLine();
+        System.out.println(censore(censText, censoringWord, censoredWord));
+
 
         System.out.println("\n" + "Задание 4" + "\n");
         System.out.println("Введите 1 строку");
