@@ -7,7 +7,10 @@ public class Censored {
 
     public static String censore(String text) {
 
-        String censored = text.replace("бяка", "[вырезано цензурой]");
+        String censoringWord = "бяка";
+        String censoredWord = "[вырезано цензурой]";
+
+        String censored = text.replace(censoringWord, censoredWord);
         return censored;
     }
 }
